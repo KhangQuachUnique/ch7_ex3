@@ -1,28 +1,30 @@
-/* Base Element Styles */
+/* Modern Blue Theme CSS */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 85%;
-    background-color: #f9fff9; /* Light green tinted background */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #f0f8ff; /* Light blue background */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Horizontal centering */
+    color: #333;
+    line-height: 1.6;
 }
 
 .container {
-    width: 60em; /* Fixed layout width */
-    margin: 2em auto;
+    max-width: 1000px;
+    width: 90%;
+    margin: 2rem auto;
     background: #ffffff;
-    padding: 2em;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,128,0,0.2); /* Light green shadow */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    font-size: 140%;
-    color: #006400; /* Dark green */
-    margin-bottom: .5em;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
     text-align: center;
+    font-weight: 600;
 }
 
 br {
@@ -30,30 +32,39 @@ br {
 }
 
 #quantity {
-    width: 2em;
+    width: 3rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 /* Table Styles */
 table {
-    border: 2px solid #006400;
+    border: 1px solid #e0e0e0;
     border-collapse: collapse;
     width: 100%;
-    margin: 1em auto;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 th, td {
-    border: 1px solid #228B22; /* Forest green */
+    border: 1px solid #e0e0e0;
     text-align: left;
-    padding: .5em;
+    padding: 0.8rem;
 }
 
 th {
-    background-color: #90EE90; /* Light green */
-    color: #004d00;
+    background-color: #3498db;
+    color: white;
+    font-weight: 500;
 }
 
-td {
-    background-color: #f0fff0;
+tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #ecf0f1;
 }
 
 .right {
@@ -62,16 +73,38 @@ td {
 
 /* Interactive Elements */
 input[type="submit"], a {
-    background-color: #228B22;
+    background-color: #3498db;
     color: white;
-    padding: .3em .8em;
+    padding: 0.6rem 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     text-decoration: none;
-    font-size: 90%;
+    font-size: 0.9rem;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
 }
 
 input[type="submit"]:hover, a:hover {
-    background-color: #006400;
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+input[type="text"], input[type="email"], select {
+    padding: 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
 }

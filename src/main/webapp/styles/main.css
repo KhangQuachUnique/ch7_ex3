@@ -1,26 +1,26 @@
-/* The styles for the elements */
+/* Base Element Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 85%;
-    background-color: #f9fff9; /* nền nhạt pha xanh lá */
+    background-color: #f9fff9; /* Light green tinted background */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;   /* căn giữa ngang */
+    justify-content: center; /* Horizontal centering */
 }
 
 .container {
-    width: 60em;               /* giữ bố cục cố định */
+    width: 60em; /* Fixed layout width */
     margin: 2em auto;
     background: #ffffff;
     padding: 2em;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0,128,0,0.2); /* đổ bóng nhẹ xanh */
+    box-shadow: 0px 0px 10px rgba(0,128,0,0.2); /* Light green shadow */
 }
 
 h1 {
     font-size: 140%;
-    color: #006400;  /* xanh lá đậm */
+    color: #006400; /* Dark green */
     margin-bottom: .5em;
     text-align: center;
 }
@@ -33,30 +33,34 @@ br {
     width: 2em;
 }
 
-/* The styles for the tables */
+/* Table Styles */
 table {
     border: 2px solid #006400;
     border-collapse: collapse;
     width: 100%;
     margin: 1em auto;
 }
+
 th, td {
-    border: 1px solid #228B22; /* xanh rừng */
+    border: 1px solid #228B22; /* Forest green */
     text-align: left;
     padding: .5em;
 }
+
 th {
-    background-color: #90EE90; /* xanh nhạt */
+    background-color: #90EE90; /* Light green */
     color: #004d00;
 }
+
 td {
     background-color: #f0fff0;
 }
+
 .right {
     text-align: right;
 }
 
-/* Buttons và link */
+/* Interactive Elements */
 input[type="submit"], a {
     background-color: #228B22;
     color: white;
@@ -67,6 +71,7 @@ input[type="submit"], a {
     font-size: 90%;
     cursor: pointer;
 }
+
 input[type="submit"]:hover, a:hover {
     background-color: #006400;
 }
